@@ -41,7 +41,7 @@
     <retrofit.version>2.9.0</retrofit.version>
     <okhttp.version>3.14.9</okhttp.version>
     <resilience-4j.version>1.7.1</resilience-4j.version>
-    <jackson.version>2.12.4</jackson.version>
+    <jackson.version>2.12.5</jackson.version>
     <slf4j.version>1.7.32</slf4j.version>
     <!-- test -->
     <junit.version>5.7.2</junit.version>
@@ -254,6 +254,12 @@
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-databind</artifactId>
+      <version>${jackson.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.fasterxml.jackson.module</groupId>
+      <artifactId>jackson-module-blackbird</artifactId>
       <version>${jackson.version}</version>
     </dependency>
 
