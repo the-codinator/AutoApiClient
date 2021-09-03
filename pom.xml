@@ -220,11 +220,23 @@
 
     <dependency>
       <groupId>com.squareup.retrofit2</groupId>
+      <artifactId>converter-scalars</artifactId>
+      <version>${retrofit.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.squareup.retrofit2</groupId>
       <artifactId>converter-jackson</artifactId>
       <version>${retrofit.version}</version>
     </dependency>
 
     <!-- Resilience -->
+    <dependency>
+      <groupId>io.github.resilience4j</groupId>
+      <artifactId>resilience4j-retrofit</artifactId>
+      <version>${resilience-4j.version}</version>
+    </dependency>
+
     <dependency>
       <groupId>io.github.resilience4j</groupId>
       <artifactId>resilience4j-retry</artifactId>
@@ -236,6 +248,7 @@
       <groupId>io.github.resilience4j</groupId>
       <artifactId>resilience4j-circuitbreaker</artifactId>
       <version>${resilience-4j.version}</version>
+      <scope>provided</scope>
     </dependency>
 
     <!-- Json -->

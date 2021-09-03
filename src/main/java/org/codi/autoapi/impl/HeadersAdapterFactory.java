@@ -6,13 +6,13 @@ import lombok.AllArgsConstructor;
 import org.codi.autoapi.credential.ClientCredentialProvider;
 
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
-public class HeadersAdapter {
+public class HeadersAdapterFactory {
 
-    public static HeadersAdapter create(Map<String, String> defaultHeaders,
+    public static HeadersAdapterFactory create(Map<String, String> defaultHeaders,
         ClientCredentialProvider credentialProvider) {
         if (defaultHeaders == null && credentialProvider == null) {
             return null;
         }
-        return new HeadersAdapter();
+        return new HeadersAdapterFactory();
     }
 }
